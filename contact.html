@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact HopeReach NGO, make a donation, or sign up to volunteer. Every contribution matters." />
+  <title>Contact &amp; Donate | HopeReach NGO</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact-donate.css" />
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        🌱 Hope<span>Reach</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="#donate" class="nav-cta">Donate</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Page Header ===== -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Contact &amp; Donate</h1>
+      <p>Reach out, get involved, or support our work financially.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>
+            Have a question, partnership proposal, or media enquiry?
+            We'd love to hear from you. Our team typically responds within
+            one business day.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Office Address</h4>
+                <p>Uhuru Gardens Complex, Block C<br />Nairobi, Kenya</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+254700123456">+254 700 123 456</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:info@hoperreach.org">info@hopereach.org</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <h4>Office Hours</h4>
+                <p>Monday – Friday: 8:00 AM – 5:00 PM EAT</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <h4>Follow Us</h4>
+            <div class="contact-social-links">
+              <a href="#" aria-label="Facebook">f</a>
+              <a href="#" aria-label="Twitter">𝕏</a>
+              <a href="#" aria-label="Instagram">📷</a>
+              <a href="#" aria-label="LinkedIn">in</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <h2>Send Us a Message</h2>
+          <p>Fill in the form below and we'll get back to you shortly.</p>
+          <div class="form-success" id="contactSuccess">
+            ✅ Message sent! We'll be in touch soon.
+          </div>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="e.g. Jane" required />
+                <span class="form-error" id="firstNameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="e.g. Doe" required />
+                <span class="form-error" id="lastNameError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="">— Select a subject —</option>
+                <option value="general">General Enquiry</option>
+                <option value="partnership">Partnership Proposal</option>
+                <option value="volunteer">Volunteering</option>
+                <option value="media">Media &amp; Press</option>
+                <option value="donation">Donation Enquiry</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="form-error" id="subjectError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;padding:1rem;">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Donate Section ===== -->
+  <section class="donate-section" id="donate">
+    <div class="container">
+      <div class="donate-grid">
+
+        <!-- Donate Info -->
+        <div class="donate-info">
+          <h2>Make a Donation</h2>
+          <p>
+            Your generous contribution funds life-changing programmes for thousands of
+            community members. Every donation — no matter the size — makes a real difference.
+          </p>
+          <div class="impact-list">
+            <div class="impact-item">
+              <span class="impact-amount">$10</span>
+              <p>Provides a school child with learning materials for one term.</p>
+            </div>
+            <div class="impact-item">
+              <span class="impact-amount">$25</span>
+              <p>Funds a free health consultation for a remote community member.</p>
+            </div>
+            <div class="impact-item">
+              <span class="impact-amount">$50</span>
+              <p>Supports one month of vocational training for a young adult.</p>
+            </div>
+            <div class="impact-item">
+              <span class="impact-amount">$100</span>
+              <p>Covers a month's scholarship for a secondary school student.</p>
+            </div>
+            <div class="impact-item">
+              <span class="impact-amount">$250</span>
+              <p>Contributes to drilling a clean-water borehole for a village.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Donate Form -->
+        <div class="donate-form-card">
+          <h3>Choose Your Donation</h3>
+
+          <!-- Frequency Tabs -->
+          <div class="frequency-tabs" role="group" aria-label="Donation frequency">
+            <button class="frequency-tab active" data-freq="once" type="button">One-time</button>
+            <button class="frequency-tab" data-freq="monthly" type="button">Monthly</button>
+            <button class="frequency-tab" data-freq="annual" type="button">Annual</button>
+          </div>
+
+          <!-- Amount Buttons -->
+          <div class="amount-options" role="group" aria-label="Donation amount">
+            <button class="amount-btn" data-amount="10" type="button">$10</button>
+            <button class="amount-btn active" data-amount="25" type="button">$25</button>
+            <button class="amount-btn" data-amount="50" type="button">$50</button>
+            <button class="amount-btn" data-amount="100" type="button">$100</button>
+            <button class="amount-btn" data-amount="250" type="button">$250</button>
+            <button class="amount-btn" data-amount="500" type="button">$500</button>
+          </div>
+
+          <!-- Custom Amount -->
+          <div class="form-group custom-amount">
+            <label for="customAmount">Or enter a custom amount</label>
+            <div class="input-prefix">
+              <span>$</span>
+              <input
+                type="number"
+                id="customAmount"
+                name="customAmount"
+                min="1"
+                placeholder="e.g. 75"
+              />
+            </div>
+          </div>
+
+          <!-- Donor Details -->
+          <div class="form-group">
+            <label for="donorName">Full Name *</label>
+            <input type="text" id="donorName" name="donorName" placeholder="e.g. John Smith" required />
+            <span class="form-error" id="donorNameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="donorEmail">Email Address *</label>
+            <input type="email" id="donorEmail" name="donorEmail" placeholder="you@example.com" required />
+            <span class="form-error" id="donorEmailError"></span>
+          </div>
+
+          <button class="donate-btn" id="donateBtn" type="button">
+            Donate $25 Now
+          </button>
+          <p class="secure-note">🔒 Secure payment — your details are always protected.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Volunteer Section ===== -->
+  <section class="volunteer-section" id="volunteer">
+    <div class="container">
+      <h2 class="section-title">Volunteer With Us</h2>
+      <p class="section-subtitle">
+        Share your skills and time to create lasting impact in communities.
+      </p>
+      <div class="volunteer-grid">
+        <div class="volunteer-card">
+          <div class="volunteer-icon">👩‍🏫</div>
+          <h3>Teaching &amp; Tutoring</h3>
+          <p>Support our tutoring centres as a subject volunteer, helping students catch up and excel.</p>
+        </div>
+        <div class="volunteer-card">
+          <div class="volunteer-icon">🏥</div>
+          <h3>Medical Outreach</h3>
+          <p>Healthcare professionals: join our mobile clinic teams for monthly community health days.</p>
+        </div>
+        <div class="volunteer-card">
+          <div class="volunteer-icon">💻</div>
+          <h3>Digital &amp; Communications</h3>
+          <p>Web developers, designers, and content creators — help us amplify our mission online.</p>
+        </div>
+      </div>
+      <div style="text-align:center;">
+        <a href="#" class="btn btn-primary" id="volunteerBtn">Apply to Volunteer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">🌱 Hope<span>Reach</span></div>
+          <p>HopeReach NGO — empowering communities through sustainable development.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="programs.html#education">Education for All</a></li>
+            <li><a href="programs.html#health">Community Health</a></li>
+            <li><a href="programs.html#livelihoods">Livelihoods</a></li>
+            <li><a href="programs.html#water">Clean Water</a></li>
+            <li><a href="programs.html#women">Women Empowerment</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <ul>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#volunteer">Volunteer</a></li>
+            <li><a href="contact.html">Partner With Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 HopeReach NGO. All rights reserved.</p>
+        <p>Made with ❤️ for communities in need.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
