@@ -659,7 +659,26 @@ section {
   text-decoration: underline;
 }
 
-/* ---------- Responsive ---------- */
+/* ---------- Utility Classes ---------- */
+.text-center {
+  text-align: center;
+}
+
+.section-subtitle.centered {
+  text-align: center;
+  margin: 0 auto 2.5rem;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 1rem;
+}
+
+.story-image-placeholder {
+  aspect-ratio: 3/4;
+  font-size: 6rem;
+}
+
 @media (max-width: 992px) {
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
